@@ -1,0 +1,525 @@
+---------------------------------------------------------------
+[ 2020-04-17T09:22:10+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/login
+[运行时间：2.106438s] [吞吐率：0.47req/s] [内存消耗：2,521.22kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007797s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.060655s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '34',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => 'a777b016-ab7b-4546-81f9-5bd241758e09',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15620516830',
+  'password' => '111111',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.035362s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006563s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.067271s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:22:54+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/login
+[运行时间：0.096290s] [吞吐率：10.39req/s] [内存消耗：2,521.23kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003266s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '34',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => 'def7454b-c6a9-495b-bf4f-5bf90ed15d04',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15620516830',
+  'password' => '111111',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002385s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.021086s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:23:06+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/login
+[运行时间：0.080606s] [吞吐率：12.41req/s] [内存消耗：2,521.23kb] [文件加载：124]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003240s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '34',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => '84bfccf9-0861-4e8f-9f52-aac623647065',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15620516830',
+  'password' => '123456',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002072s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000621s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028179s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:23:36+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/user/login
+[运行时间：0.373137s] [吞吐率：2.68req/s] [内存消耗：2,831.80kb] [文件加载：125]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004651s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '34',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => '3b5f596b-5caa-43f1-92dd-91440a41d8f8',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15620516830',
+  'password' => '123456',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001908s ]
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\copyright\application\api\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '15620516830' LIMIT 1 [ RunTime:0.000748s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:23:42+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/user/login
+[运行时间：0.346597s] [吞吐率：2.89req/s] [内存消耗：2,916.62kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002988s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '34',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => 'a9e50ff6-a5c9-49ca-b296-d68fb441fab1',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15620516830',
+  'password' => '111111',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003547s ]
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\copyright\application\api\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009919s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024639s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '15620516830' LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1586758705,`logintime`=1587086622,`updatetime`=1587086622  WHERE  `id` = 5 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019537s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('5c7f0b94e60bae3ff9e95aab613dd0c388915080' , 5 , 1587086622 , 1589678622) [ RunTime:0.026054s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.002454s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:30:07+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/upload_file
+[运行时间：0.288531s] [吞吐率：3.47req/s] [内存消耗：2,879.93kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.018856s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.014221s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'upload_file',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '874',
+  'content-type' => 'multipart/form-data; boundary=--------------------------003221156949684974129897',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => '5b0c670e-023b-4dcd-99c7-5d80efdca37d',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1b111df2-edf0-4443-a5cd-bd0f0a21562f',
+  'level_id' => '4',
+  'name' => '张二',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002355s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Client->upload_file[ D:\WWW\copyright\application\api\controller\Client.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012402s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.036416s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020777s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000721s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'copyright.fa_file_info' doesn't exist[D:\WWW\copyright\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-04-17T09:32:47+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/upload_file
+[运行时间：0.182704s] [吞吐率：5.47req/s] [内存消耗：2,879.93kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003471s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'upload_file',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '880',
+  'content-type' => 'multipart/form-data; boundary=--------------------------980344655378347452288666',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => '1bae5f7a-ae34-4a7b-abe5-11bc3cdddedc',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1b111df2-edf0-4443-a5cd-bd0f0a21562f',
+  'level_id' => '4',
+  'name' => '还是张二',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002187s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Client->upload_file[ D:\WWW\copyright\application\api\controller\Client.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025745s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.014939s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000477s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'copyright.fa_file_info' doesn't exist[D:\WWW\copyright\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2020-04-17T09:33:30+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/upload_file
+[运行时间：0.129494s] [吞吐率：7.72req/s] [内存消耗：2,837.88kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003492s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'upload_file',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '880',
+  'content-type' => 'multipart/form-data; boundary=--------------------------243264532694791046113463',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => 'ffa8f764-216c-43be-ba7d-03ba2e4ac9c9',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1b111df2-edf0-4443-a5cd-bd0f0a21562f',
+  'level_id' => '4',
+  'name' => '还是张二',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003551s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Client->upload_file[ D:\WWW\copyright\application\api\controller\Client.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000601s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028780s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.015085s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_file_info` [ RunTime:0.020884s ]
+[ sql ] [ SQL ] INSERT INTO `fa_file_info` (`user_id` , `name` , `level_id` , `createtime`) VALUES (5 , '还是张二' , 4 , 1587087210) [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2020-04-17T09:34:09+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/upload_file
+[运行时间：0.136323s] [吞吐率：7.34req/s] [内存消耗：2,913.34kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003731s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'upload_file',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '880',
+  'content-type' => 'multipart/form-data; boundary=--------------------------816070660516759318274848',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => 'b1f6735c-c097-4e3b-ad4e-c0528792d77f',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1b111df2-edf0-4443-a5cd-bd0f0a21562f',
+  'level_id' => '4',
+  'name' => '还是张二',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001913s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Client->upload_file[ D:\WWW\copyright\application\api\controller\Client.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009489s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027910s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.014878s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_file_info` [ RunTime:0.015422s ]
+[ error ] [0]数据表字段不存在:[path][D:\WWW\copyright\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2020-04-17T09:34:47+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/client/upload_file
+[运行时间：0.152236s] [吞吐率：6.57req/s] [内存消耗：2,838.82kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003658s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'client',
+    2 => 'upload_file',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '880',
+  'content-type' => 'multipart/form-data; boundary=--------------------------127733155712655778804205',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate, br',
+  'host' => 'liujunfeng.imwork.net:23930',
+  'postman-token' => '162e8977-b900-4e49-9452-c6f95ca7af28',
+  'cache-control' => 'no-cache',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.24.1',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1b111df2-edf0-4443-a5cd-bd0f0a21562f',
+  'level_id' => '4',
+  'name' => '还是张二',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.005527s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Client->upload_file[ D:\WWW\copyright\application\api\controller\Client.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011670s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030030s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5c7f0b94e60bae3ff9e95aab613dd0c388915080' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.017998s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_file_info` [ RunTime:0.018425s ]
+[ sql ] [ SQL ] INSERT INTO `fa_file_info` (`user_id` , `name` , `level_id` , `createtime` , `path`) VALUES (5 , '还是张二' , 4 , 1587087287 , '\\file_info\\20200417\\7b1551712d3a657ef879b42fd14082ca.zip') [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2020-04-17T10:26:12+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/user/login
+[运行时间：1.674431s] [吞吐率：0.60req/s] [内存消耗：2,917.22kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000198s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.050541s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.0.108:8080/',
+  'origin' => 'http://192.168.0.108:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '34',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:23930',
+)
+[ info ] [ PARAM ] array (
+  'password' => '123456',
+  'mobile' => '13683141819',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.026091s ]
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api/lang/zh-cn/user.php
+[ info ] [ RUN ] app\api\controller\User->login[ D:\WWW\copyright\application\api\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001775s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.028446s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1586943302,`logintime`=1587090371,`updatetime`=1587090371  WHERE  `id` = 4 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.018310s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('5d45bdcfa362b1dd6bcfde81959a250539c23417' , 4 , 1587090371 , 1589682371) [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5d45bdcfa362b1dd6bcfde81959a250539c23417' LIMIT 1 [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2020-04-17T10:26:12+08:00 ] 192.168.3.1 POST liujunfeng.imwork.net:23930/api/audit/level_list
+[运行时间：0.209976s] [吞吐率：4.76req/s] [内存消耗：2,842.55kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002885s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.0.108:8080/',
+  'origin' => 'http://192.168.0.108:8080',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '60',
+  'connection' => 'close',
+  'host' => 'liujunfeng.imwork.net:23930',
+)
+[ info ] [ PARAM ] array (
+  'token' => '1c362cad-8845-44e9-b7eb-0fb4e922f383',
+  'name' => '',
+  'pid' => '',
+  'price' => '',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002653s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_list[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008800s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.024670s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '5d45bdcfa362b1dd6bcfde81959a250539c23417' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.014087s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.037761s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 0 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 2 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 3 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 11 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` WHERE  `pid` = 12 [ RunTime:0.000308s ]

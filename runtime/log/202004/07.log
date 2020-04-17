@@ -1,0 +1,52 @@
+---------------------------------------------------------------
+[ 2020-04-07T15:56:38+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/send
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_sms` WHERE  `ip` = '192.168.71.1'  AND `createtime` >  1586242598 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.045506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_sms` (`event` , `mobile` , `code` , `ip` , `createtime`) VALUES ('register' , '13683141819' , '4084' , '192.168.71.1' , 1586246198) [ RunTime:0.027504s ]
+[ error ] [0]致命错误: Class 'alisms\SendSms' not found
+---------------------------------------------------------------
+[ 2020-04-07T15:59:17+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/send
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_sms` WHERE  `ip` = '192.168.71.1'  AND `createtime` >  1586242757 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_sms` (`event` , `mobile` , `code` , `ip` , `createtime`) VALUES ('register' , '13683141819' , '5227' , '192.168.71.1' , 1586246357) [ RunTime:0.031004s ]
+[ error ] [0]致命错误: Class 'alisms\SendSms' not found
+---------------------------------------------------------------
+[ 2020-04-07T16:02:44+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/send
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_sms` WHERE  `ip` = '192.168.71.1'  AND `createtime` >  1586242964 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-07T16:08:20+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/send
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.226028s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_sms` WHERE  `ip` = '192.168.71.1'  AND `createtime` >  1586243299 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.143518s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `fa_sms` (`event` , `mobile` , `code` , `ip` , `createtime`) VALUES ('register' , '13683141819' , '8588' , '192.168.71.1' , 1586246899) [ RunTime:0.038505s ]
+---------------------------------------------------------------
+[ 2020-04-07T16:09:16+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.067509s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_sms`  SET `times`=1  WHERE  `id` = 3 [ RunTime:0.031504s ]
+---------------------------------------------------------------
+[ 2020-04-07T16:09:21+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/sms/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin` [ RunTime:0.030004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_admin` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_sms` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_sms` WHERE  `mobile` = '13683141819'  AND `event` = 'register' ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000501s ]

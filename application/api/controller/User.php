@@ -7,13 +7,16 @@ use app\common\library\Ems;
 use app\common\library\Sms;
 use fast\Random;
 use think\Validate;
-
+use think\Db;
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Headers: Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin');
 /**
  * 会员接口
  */
 class User extends Api
 {
-    protected $noNeedLogin = ['login', 'mobilelogin', 'register', 'resetpwd', 'changeemail', 'changemobile', 'third'];
+    protected $noNeedLogin = ['login', 'mobilelogin', 'register', 'resetpwd', 'changeemail', 'changemobile', 'third','cp','test'];
+//    protected $noNeeLogin = '*';
     protected $noNeedRight = '*';
 
     public function _initialize()
@@ -37,7 +40,7 @@ class User extends Api
      */
     public function login()
     {
-        $account = $this->request->request('account');
+        $account = $this->request->request('mobile');
         $password = $this->request->request('password');
         if (!$account || !$password) {
             $this->error(__('Invalid parameters'));
@@ -99,20 +102,21 @@ class User extends Api
      */
     public function register()
     {
-        $username = $this->request->request('username');
+//        $username = $this->request->request('username');
+        $username = $this->request->request('mobile');
         $password = $this->request->request('password');
-        $email = $this->request->request('email');
+//        $email = $this->request->request('email');
         $mobile = $this->request->request('mobile');
         if (!$username || !$password) {
             $this->error(__('Invalid parameters'));
         }
-        if ($email && !Validate::is($email, "email")) {
-            $this->error(__('Email is incorrect'));
-        }
+//        if ($email && !Validate::is($email, "email")) {
+//            $this->error(__('Email is incorrect'));
+//        }
         if ($mobile && !Validate::regex($mobile, "^1\d{10}$")) {
             $this->error(__('Mobile is incorrect'));
         }
-        $ret = $this->auth->register($username, $password, $email, $mobile, []);
+        $ret = $this->auth->register($username, $password,'', $mobile, []);
         if ($ret) {
             $data = ['userinfo' => $this->auth->getUserinfo()];
             $this->success(__('Sign up successful'), $data);
@@ -310,5 +314,31 @@ class User extends Api
         } else {
             $this->error($this->auth->getError());
         }
+    }
+        public function cp()
+    {
+
+        $mobile = $this->request->request("mobile");
+
+        $newpassword = $this->request->request("newpassword");
+
+        if (!$newpassword) {
+            $this->error(__('Invalid parameters'));
+        }
+        $user = DB::name('user')->where('mobile',$mobile)->find();
+
+        //模拟一次登录
+        $this->auth->direct($user['id']);
+        $ret = $this->auth->changepwd($newpassword, '', true);
+        if ($ret) {
+            $this->success(__('Reset password successful'));
+        } else {
+            $this->error($this->auth->getError());
+        }
+    }
+
+    public function test()
+    {
+        echo 1;
     }
 }

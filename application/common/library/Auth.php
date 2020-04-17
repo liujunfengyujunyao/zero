@@ -26,7 +26,8 @@ class Auth
     //默认配置
     protected $config = [];
     protected $options = [];
-    protected $allowFields = ['id', 'username', 'nickname', 'mobile', 'avatar', 'score'];
+    protected $allowFields = ['id', 'username', 'nickname', 'mobile', 'avatar', 'score'];//返回的用户信息字段
+//    protected $allowFields = ['id', 'mobile'];//返回的用户信息字段
 
     public function __construct($options = [])
     {
@@ -371,6 +372,7 @@ class Auth
     public function getUserinfo()
     {
         $data = $this->_user->toArray();
+        $this->setAllowFields(['id','mobile','group_id']);//group_id:0客户 1后台
         $allowFields = $this->getAllowFields();
         $userinfo = array_intersect_key($data, array_flip($allowFields));
         $userinfo = array_merge($userinfo, Token::get($this->_token));

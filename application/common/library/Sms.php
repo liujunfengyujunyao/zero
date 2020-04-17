@@ -3,6 +3,7 @@
 namespace app\common\library;
 
 use think\Hook;
+use alisms\SendSms;
 
 /**
  * 短信验证码类
@@ -47,18 +48,32 @@ class Sms
      * @param   string $event  事件
      * @return  boolean
      */
-    public static function send($mobile, $code = null, $event = 'default')
+    public static function send($mobile, $code = NULL, $event = 'default')
     {
         $code = is_null($code) ? mt_rand(1000, 9999) : $code;
         $time = time();
         $ip = request()->ip();
         $sms = \app\common\model\Sms::create(['event' => $event, 'mobile' => $mobile, 'code' => $code, 'ip' => $ip, 'createtime' => $time]);
-        $result = Hook::listen('sms_send', $sms, null, true);
-        if (!$result) {
+        //$result = Hook::listen('sms_send', $sms, null, true);
+        $s = new SendSms();
+        //设置关键的四个配置参数，其实配置参数应该写在公共或者模块下的config配置文件中，然后在获取使用，这里我就直接使用了。
+//        
+//        $s->signName = '旭日东升';
+        $s->signName = '哇咔哇咔';
+        $s->templateCode = 'SMS_166867972';
+
+        //$mobile为手机号
+        //$mobile = $phone;
+        //模板参数，自定义了随机数，你可以在这里保存在缓存或者cookie等设置有效期以便逻辑发送后用户使用后的逻辑处理
+        //session('code',$code);//用于比对
+        $templateParam = array("code"=>$code);
+        $result = $s->send($mobile,$templateParam);
+        if (!$result)
+        {
             $sms->delete();
-            return false;
+            return FALSE;
         }
-        return true;
+        return TRUE;
     }
 
     /**
@@ -92,26 +107,35 @@ class Sms
     {
         $time = time() - self::$expire;
         $sms = \app\common\model\Sms::where(['mobile' => $mobile, 'event' => $event])
-            ->order('id', 'DESC')
-            ->find();
-        if ($sms) {
-            if ($sms['createtime'] > $time && $sms['times'] <= self::$maxCheckNums) {
+                ->order('id', 'DESC')
+                ->find();
+        if ($sms)
+        {
+            if ($sms['createtime'] > $time && $sms['times'] <= self::$maxCheckNums)
+            {
                 $correct = $code == $sms['code'];
-                if (!$correct) {
+                if (!$correct)
+                {
                     $sms->times = $sms->times + 1;
                     $sms->save();
-                    return false;
-                } else {
-                    $result = Hook::listen('sms_check', $sms, null, true);
-                    return $result;
+                    return FALSE;
                 }
-            } else {
+                else
+                {   
+                    //$result = Hook::listen('sms_check', $sms, null, true);
+                    return TRUE;
+                }
+            }
+            else
+            {
                 // 过期则清空该手机验证码
                 self::flush($mobile, $event);
                 return false;
             }
-        } else {
-            return false;
+        }
+        else
+        {
+            return FALSE;
         }
     }
 

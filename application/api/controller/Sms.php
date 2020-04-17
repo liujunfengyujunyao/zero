@@ -5,14 +5,24 @@ namespace app\api\controller;
 use app\common\controller\Api;
 use app\common\library\Sms as Smslib;
 use app\common\model\User;
+use think\Db;
+
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Headers: Content-Type,Content-Length,Accept-Encoding,X-Requested-with, Origin');
 
 /**
  * 手机短信接口
  */
 class Sms extends Api
 {
+
     protected $noNeedLogin = '*';
     protected $noNeedRight = '*';
+
+    public function _initialize()
+    {
+        parent::_initialize();
+    }
 
     /**
      * 发送验证码
@@ -34,11 +44,13 @@ class Sms extends Api
             $this->error(__('发送频繁'));
         }
         $ipSendTotal = \app\common\model\Sms::where(['ip' => $this->request->ip()])->whereTime('createtime', '-1 hours')->count();
-        if ($ipSendTotal >= 5) {
+        if ($ipSendTotal >= 500) {
             $this->error(__('发送频繁'));
         }
         if ($event) {
-            $userinfo = User::getByMobile($mobile);
+//            $userinfo = \app\admin\model\Admin::getByUsername($mobile);
+            $userinfo = DB::name('user')->where('mobile',$mobile)->find();
+
             if ($event == 'register' && $userinfo) {
                 //已被注册
                 $this->error(__('已被注册'));
@@ -50,8 +62,10 @@ class Sms extends Api
                 $this->error(__('未注册'));
             }
         }
+//        halt($event);
         $ret = Smslib::send($mobile, null, $event);
         if ($ret) {
+//            halt($ret);
             $this->success(__('发送成功'));
         } else {
             $this->error(__('发送失败'));
@@ -69,14 +83,16 @@ class Sms extends Api
     {
         $mobile = $this->request->request("mobile");
         $event = $this->request->request("event");
-        $event = $event ? $event : 'register';
+//        $event = $event ? $event : 'register';
         $captcha = $this->request->request("captcha");
 
         if (!$mobile || !\think\Validate::regex($mobile, "^1\d{10}$")) {
             $this->error(__('手机号不正确'));
         }
         if ($event) {
-            $userinfo = User::getByMobile($mobile);
+//            $userinfo = \app\admin\model\Admin::getByUsername($mobile);
+            $userinfo = DB::name('user')->where('mobile',$mobile)->find();
+
             if ($event == 'register' && $userinfo) {
                 //已被注册
                 $this->error(__('已被注册'));
@@ -90,6 +106,8 @@ class Sms extends Api
         }
         $ret = Smslib::check($mobile, $captcha, $event);
         if ($ret) {
+            //添加到用户表中
+            //前端可以提交用户的手机号和密码了
             $this->success(__('成功'));
         } else {
             $this->error(__('验证码不正确'));

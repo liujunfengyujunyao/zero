@@ -1,0 +1,986 @@
+---------------------------------------------------------------
+[ 2020-04-09T15:24:30+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044506s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `email` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `email` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('13683141819' , '517103f1a54d50e59ca321c99fac68af' , '13683141819' , 1 , 0 , '' , '13683141819' , 'nUxSiw' , 1586417070 , '192.168.71.1' , 1586417070 , '192.168.71.1' , 1586417070 , 'normal' , 1586417070 , 1586417070) [ RunTime:0.009501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.063008s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('443c770dc05512747bfcf741c4d4c21e0085f47b' , 2 , 1586417070 , 1589009070) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '443c770dc05512747bfcf741c4d4c21e0085f47b' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:25:21+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:25:42+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `email` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `email` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('13683141819' , '1ddfe651f2bf8dcbdbb39b8e38808d01' , '13683141819' , 1 , 0 , '' , '13683141819' , 'gDmSZk' , 1586417142 , '192.168.71.1' , 1586417142 , '192.168.71.1' , 1586417142 , 'normal' , 1586417142 , 1586417142) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('530aa4e5621cbd457694ea28234053d337934475' , 3 , 1586417142 , 1589009142) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '530aa4e5621cbd457694ea28234053d337934475' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:34:34+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `username` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user` (`username` , `password` , `email` , `mobile` , `level` , `score` , `avatar` , `nickname` , `salt` , `jointime` , `joinip` , `logintime` , `loginip` , `prevtime` , `status` , `createtime` , `updatetime`) VALUES ('13683141819' , '0f97cd32e35efa980d70f05299e15acf' , '' , '13683141819' , 1 , 0 , '' , '13683141819' , '0C72oY' , 1586417673 , '192.168.71.1' , 1586417673 , '192.168.71.1' , 1586417673 , 'normal' , 1586417673 , 1586417673) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('d8337812ed3844db456ad4831e69c16a26b25fcc' , 4 , 1586417673 , 1589009673) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8337812ed3844db456ad4831e69c16a26b25fcc' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:41:10+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.038004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `logintime`=1586418070,`updatetime`=1586418070  WHERE  `id` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('32bc501ceb320b850761ce6996a4e943778e4c37' , 4 , 1586418070 , 1589010070) [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:47:35+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.034004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:47:45+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.035505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:48:03+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ error ] [8]未定义数组索引: mobile
+---------------------------------------------------------------
+[ 2020-04-09T15:48:08+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.039005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: mobile
+---------------------------------------------------------------
+[ 2020-04-09T15:48:15+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:49:24+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T15:49:34+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.058007s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.037004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:03:24+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ error ] [0]语法解析错误: syntax error, unexpected '('
+---------------------------------------------------------------
+[ 2020-04-09T16:03:44+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/register
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '32bc501ceb320b850761ce6996a4e943778e4c37' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.029003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:08:05+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:09:11+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/user/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `mobile` = '13683141819' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] UPDATE `fa_user`  SET `prevtime`=1586418070,`logintime`=1586419751,`updatetime`=1586419751  WHERE  `id` = 4 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_user_token` (`token` , `user_id` , `createtime` , `expiretime`) VALUES ('71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' , 4 , 1586419751 , 1589011751) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:22:28+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/level_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.035504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:22:31+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/client/level_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:25:31+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:25:40+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:25:53+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.029503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:43:32+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = 'd8aa945b8448d8a41ab99c04b04f9e522294b47c' LIMIT 1 [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:43:37+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:43:50+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]method not exist:think\db\Query->level_add
+---------------------------------------------------------------
+[ 2020-04-09T16:44:11+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.296038s] [吞吐率：3.38req/s] [内存消耗：2,861.06kb] [文件加载：130]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '75',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'bdc59f52-fd82-4741-a815-a1260ca6b734',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '分类1',
+  'level' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.030504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [0]method not exist:think\db\Query->level_add[D:\WWW\copyright\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2020-04-09T16:45:07+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.163521s] [吞吐率：6.12req/s] [内存消耗：2,778.12kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003001s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '75',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '42fc6e2e-38a8-4cf4-be43-8612b4e1d442',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '分类1',
+  'level' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.018502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `level`) VALUES ('分类1' , 1) [ RunTime:0.031004s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:46:58+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.150519s] [吞吐率：6.64req/s] [内存消耗：2,779.87kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012502s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '75',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '83de9a7c-78e8-4e5e-b1c1-2a5581e0f7b4',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '分类1',
+  'level' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.019002s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `level` , `createtime` , `updatetime`) VALUES ('分类1' , 1 , 1586422018 , 1586422018) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:47:15+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.154020s] [吞吐率：6.49req/s] [内存消耗：2,779.87kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006001s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '75',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '78ef898d-1941-4144-83ba-02a1dd7462f0',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '分类2',
+  'level' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.041506s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `level` , `createtime` , `updatetime`) VALUES ('分类2' , 1 , 1586422035 , 1586422035) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:56:33+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.184023s] [吞吐率：5.43req/s] [内存消耗：2,781.41kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '75',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '2bd5c642-be2b-469b-93a2-b4efd5b9e125',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '分类3',
+  'level' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.044505s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.031504s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.028004s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `level` , `createtime` , `updatetime` , `price`) VALUES ('分类3' , 1 , 1586422593 , 1586422593 , 0) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T16:57:07+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_add
+[运行时间：0.126016s] [吞吐率：7.94req/s] [内存消耗：2,781.80kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '120',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '53059aa0-5151-4d96-a831-bb4a838ff9f2',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '文字口述作品',
+  'level' => '2',
+  'price' => '100',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.027004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `level` , `createtime` , `updatetime` , `price`) VALUES ('文字口述作品' , 2 , 1586422627 , 1586422627 , 100) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:06:04+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level1_add
+[运行时间：0.110014s] [吞吐率：9.09req/s] [内存消耗：2,781.00kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003000s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level1_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '84',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'dd55afbe-5398-4e0c-ba4f-42a1aa94e42e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '商标代理',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level1_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.019003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `createtime` , `updatetime`) VALUES ('商标代理' , 1586423164 , 1586423164) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:06:23+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level1_add
+[运行时间：0.140517s] [吞吐率：7.12req/s] [内存消耗：2,781.00kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012502s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level1_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '84',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '34f83a45-6dfd-4c4c-a1ea-5eb2cb3e2b62',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '商标转让',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level1_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `createtime` , `updatetime`) VALUES ('商标转让' , 1586423183 , 1586423183) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:06:37+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level1_add
+[运行时间：0.159520s] [吞吐率：6.27req/s] [内存消耗：2,781.06kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004000s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level1_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '93',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '0e4814ec-3793-40cd-8164-eeafb95e177e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '软件著作权',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level1_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.032004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.037005s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `createtime` , `updatetime`) VALUES ('软件著作权' , 1586423197 , 1586423197) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:07:34+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level2_add
+[运行时间：0.135017s] [吞吐率：7.41req/s] [内存消耗：2,782.57kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004500s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level2_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '118',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '00725863-5c7b-4479-9de2-43b143febb22',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '文字口述作品',
+  'pid' => '3',
+  'price' => '100',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level2_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.017503s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `createtime` , `updatetime` , `pid` , `price`) VALUES ('文字口述作品' , 1586423254 , 1586423254 , 100 , 3) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:09:17+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level2_add
+[运行时间：0.134017s] [吞吐率：7.46req/s] [内存消耗：2,782.53kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004001s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level2_add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '100',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '52b16d76-bc55-44e1-92a2-a0c0680aaffc',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品',
+  'pid' => '3',
+  'price' => '200',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level2_add[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] INSERT INTO `fa_level` (`name` , `createtime` , `updatetime` , `pid` , `price`) VALUES ('美术作品' , 1586423357 , 1586423357 , 3 , 200) [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:18:46+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level1_save
+[运行时间：0.136518s] [吞吐率：7.33req/s] [内存消耗：2,784.52kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level1_save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '90',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '5ffdb9a9-e949-4666-882e-4ac5c7f1e696',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '商标代理1',
+  'id' => '1',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level1_save[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010501s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.022003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] UPDATE `fa_level`  SET `name`='商标代理1',`price`=NULL,`updatetime`=1586423926  WHERE  `id` = 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:19:20+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level2_save
+[运行时间：0.102013s] [吞吐率：9.80req/s] [内存消耗：2,870.13kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level2_save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '100',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'a108d20f-88ca-4f2e-9930-61b41d5af600',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  0 => '1',
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level2_save[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: id[D:\WWW\copyright\application\api\controller\Audit.php:77]
+---------------------------------------------------------------
+[ 2020-04-09T17:19:48+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level2_save
+[运行时间：0.110514s] [吞吐率：9.05req/s] [内存消耗：2,870.16kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level2_save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '101',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '60176324-f4a3-4e08-aa24-f53a5aeac2d6',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+  'id' => '5',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.003001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level2_save[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026004s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.022503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [8]未定义数组索引: pirce[D:\WWW\copyright\application\api\controller\Audit.php:77]
+---------------------------------------------------------------
+[ 2020-04-09T17:20:02+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level2_save
+[运行时间：0.142018s] [吞吐率：7.04req/s] [内存消耗：2,785.15kb] [文件加载：128]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.007501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level2_save',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '101',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '6b8ecf91-6ebb-4dd6-9e1b-a858f44a2e4e',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+  'id' => '5',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level2_save[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.025003s ]
+[ sql ] [ SQL ] UPDATE `fa_level`  SET `name`='美术作品1',`price`=2000,`updatetime`=1586424002  WHERE  `id` = 5 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:25:06+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[运行时间：0.145518s] [吞吐率：6.87req/s] [内存消耗：2,815.98kb] [文件加载：127]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002500s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '101',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7345e40d-042a-4e14-b8c0-e7e90b38281a',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+  'id' => '5',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_list[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001500s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.038005s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.024003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2020-04-09T17:29:03+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[运行时间：0.155020s] [吞吐率：6.45req/s] [内存消耗：2,857.19kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000500s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.010501s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '101',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => 'fc20075e-7d93-4595-bbe5-69edfecf5f7d',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+  'id' => '5',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002500s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_list[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010502s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.026003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.023503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.026503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` [ RunTime:0.000000s ]
+[ error ] [0]variable type error： array[D:\WWW\copyright\thinkphp\library\think\Response.php:316]
+---------------------------------------------------------------
+[ 2020-04-09T17:29:18+08:00 ] 192.168.71.1 POST 192.168.71.1:6654/api/audit/level_list
+[运行时间：0.137017s] [吞吐率：7.30req/s] [内存消耗：2,814.95kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000000s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008001s ]
+[ info ] [ LANG ] D:\WWW\copyright\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'audit',
+    2 => 'level_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'content-length' => '101',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => '192.168.71.1:6654',
+  'accept' => '*/*',
+  'user-agent' => 'PostmanRuntime/7.6.0',
+  'postman-token' => '7953b325-6e24-4e62-a68d-b3635c569514',
+  'cache-control' => 'no-cache',
+  'content-type' => 'application/x-www-form-urlencoded',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6e0c721e-87fc-48e3-b5c8-948b0b986472',
+  'name' => '美术作品1',
+  'price' => '2000',
+  'id' => '5',
+)
+[ info ] [ LANG ] D:\WWW\copyright\public/../application/api\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002501s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\api\controller\Audit->level_list[ D:\WWW\copyright\application\api\controller\Audit.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=copyright;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user_token` [ RunTime:0.025503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user_token` WHERE  `token` = '71fc5035faaf73b2cf79ca2fc6a0b5cb660fce61' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_user` [ RunTime:0.020503s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_user` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_level` [ RunTime:0.021003s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_level` [ RunTime:0.000500s ]

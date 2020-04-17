@@ -361,4 +361,127 @@ if (!function_exists('hsv2rgb')) {
             floor($b * 255)
         ];
     }
+    function httpStatus($num){//网页返回码
+        static $http = array (
+            100 => "HTTP/1.1 100 Continue",
+            101 => "HTTP/1.1 101 Switching Protocols",
+            200 => "HTTP/1.1 200 OK",
+            201 => "HTTP/1.1 201 Created",
+            202 => "HTTP/1.1 202 Accepted",
+            203 => "HTTP/1.1 203 Non-Authoritative Information",
+            204 => "HTTP/1.1 204 No Content",
+            205 => "HTTP/1.1 205 Reset Content",
+            206 => "HTTP/1.1 206 Partial Content",
+            300 => "HTTP/1.1 300 Multiple Choices",
+            301 => "HTTP/1.1 301 Moved Permanently",
+            302 => "HTTP/1.1 302 Found",
+            303 => "HTTP/1.1 303 See Other",
+            304 => "HTTP/1.1 304 Not Modified",
+            305 => "HTTP/1.1 305 Use Proxy",
+            307 => "HTTP/1.1 307 Temporary Redirect",
+            400 => "HTTP/1.1 400 Bad Request",
+            401 => "HTTP/1.1 401 Unauthorized",
+            402 => "HTTP/1.1 402 Payment Required",
+            403 => "HTTP/1.1 403 Forbidden",
+            404 => "HTTP/1.1 404 Not Found",
+            405 => "HTTP/1.1 405 Method Not Allowed",
+            406 => "HTTP/1.1 406 Not Acceptable",
+            407 => "HTTP/1.1 407 Proxy Authentication Required",
+            408 => "HTTP/1.1 408 Request Time-out",
+            409 => "HTTP/1.1 409 Conflict",
+            410 => "HTTP/1.1 410 Gone",
+            411 => "HTTP/1.1 411 Length Required",
+            412 => "HTTP/1.1 412 Precondition Failed",
+            413 => "HTTP/1.1 413 Request Entity Too Large",
+            414 => "HTTP/1.1 414 Request-URI Too Large",
+            415 => "HTTP/1.1 415 Unsupported Media Type",
+            416 => "HTTP/1.1 416 Requested range not satisfiable",
+            417 => "HTTP/1.1 417 Expectation Failed",
+            500 => "HTTP/1.1 500 Internal Server Error",
+            501 => "HTTP/1.1 501 Not Implemented",
+            502 => "HTTP/1.1 502 Bad Gateway",
+            503 => "HTTP/1.1 503 Service Unavailable",
+            504 => "HTTP/1.1 504 Gateway Time-out"
+        );
+        header($http[$num]);
+        exit();
+    }
+
+    if (!function_exists('json_curl')) {
+        function json_curl($url, $para ){
+            $data_string=json_encode($para,JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+            $curl = curl_init($url);
+            curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
+            curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);//$data JSON类型字符串
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);//SSL证书认证
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);//严格认证
+            curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Content-Length: ' . strlen($data_string)));
+            $result = curl_exec($curl);
+            curl_close($curl);
+            return $result;
+        }
+    }
+    function decrypt($source,$private_Key, $public_Key)
+    {
+
+        $private_key = "-----BEGIN RSA PRIVATE KEY-----\n" .
+            wordwrap($private_Key, 64, "\n", true) .
+            "\n-----END RSA PRIVATE KEY-----";
+
+        extension_loaded('openssl') or die('php需要openssl扩展支持');
+
+
+        /* 提取私钥 */
+        $privateKey = openssl_get_privatekey($private_key);
+
+        ($privateKey) or die('密钥不可用');
+
+
+        //分解参数
+        $args = explode('$', $source);
+
+
+        if (count($args) != 4) {
+            return 'source invalid : ';
+        }
+
+        $encryptedRandomKeyToBase64 = $args[0];
+        $encryptedDataToBase64 = $args[1];
+        $symmetricEncryptAlg = $args[2];
+        $digestAlg = $args[3];
+
+        //用私钥对随机密钥进行解密
+        openssl_private_decrypt(base64_decode(strtr($encryptedRandomKeyToBase64, '-_', '+/')), $randomKey, $privateKey);
+
+
+        openssl_free_key($privateKey);
+
+
+        $encryptedData = openssl_decrypt(base64_decode(strtr($encryptedDataToBase64, '-_', '+/')), "AES-128-ECB", $randomKey, OPENSSL_RAW_DATA);
+
+
+        //分解参数
+        $signToBase64=substr(strrchr($encryptedData,'$'),1);
+        $sourceData = substr($encryptedData,0,strlen($encryptedData)-strlen($signToBase64)-1);
+
+        $public_key = "-----BEGIN PUBLIC KEY-----\n" .
+            wordwrap($public_Key, 64, "\n", true) .
+            "\n-----END PUBLIC KEY-----";
+
+
+
+        $publicKey = openssl_pkey_get_public($public_key);
+
+        $res = openssl_verify($sourceData,base64_decode(strtr($signToBase64, '-_', '+/')), $publicKey,$digestAlg); //验证
+
+        openssl_free_key($publicKey);
+
+        //输出验证结果，1：验证成功，0：验证失败
+        if ($res == 1) {
+            return $sourceData;
+        } else {
+            return "verifySign fail!";
+        }
+    }
 }
